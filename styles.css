@@ -56,6 +56,7 @@ a img {
 }
 
 .toolbar .button {
+    display: inline-block;
     background: #000;
     color: #FFF;
     border: 1pt solid #FFF;
@@ -71,10 +72,6 @@ a img {
     color: #000;
     border: 1pt solid #FFF;
     cursor: hand;
-}
-
-.toolbar .download {
-    float: right;
 }
 
 .page {
