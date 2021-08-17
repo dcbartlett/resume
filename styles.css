@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #ccc;
+}
+
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+.toolbar {
+    background: #222;
+    color: #fff;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    -webkit-box-shadow: 0px 0px 25px 5px #333333;
+    -moz-box-shadow: 0px 0px 25px 5px #333333;
+    box-shadow: 0px 0px 25px 5px #333333;
+}
+
+.toolbar .left-nav {
+    float: left;
+}
+
+.toolbar .right-nav {
+    float: right;
+}
+
+.toolbar .edit {
+    display: none;
+}
+
+.toolbar .button {
+    background: #000;
+    color: #FFF;
+    border: 1pt solid #FFF;
+    max-width: 50px;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.toolbar .button:hover {
+    background: #FFF;
+    color: #000;
+    border: 1pt solid #FFF;
+    cursor: hand;
+}
+
+.toolbar .download {
+    float: right;
+}
+
+.page {
+    background: #fff;
+    border: 1pt solid #999;
+    width: 850px;
+    height: 1100px;
+    margin: 75px auto;
+    -webkit-box-shadow: 0px 0px 50px 5px #333333;
+    -moz-box-shadow: 0px 0px 25px 5px #333333;
+    box-shadow: 0px 0px 50px 5px #333333;
+}
+
+.page .section {
+    width: 100%;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.page .section.title p {
+    margin: 0px;
+    text-indent: 0px;
+}
+
+.page .section.title .right {
+    padding-top: 0px;
+}
+
+.page .section .left {
+    float: left;
+    width: 183px;
+    color: #339933;
+    padding-right: 15px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.page .section .right {
+    float: right;
+    width: 543px;
+    padding-left: 5px;
+    padding-right: 100px;
+    padding-top: 36px;
+}
+
+.page .section .exp_header {
+    width: 183px;
+    color: #339933;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.page .section .exp_entry {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.page .section .exp_entry .left {
+    float: left;
+    width: 183px;
+    color: #339933;
+    padding-right: 15px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.page .section .exp_entry .right {
+    float: right;
+    width: 543px;
+    padding-left: 5px;
+    padding-right: 100px;
+    padding-top: 0px;
+}
+
+#profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+@media print {
+    body {
+        background: none;
+    }
+
+    .toolbar {
+        display: none;
+    }
+
+    .page {
+        background: none;
+        border: 1pt solid white;
+        width: 850px;
+        height: 1100px;
+        margin: auto;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        page-break-after: always;
+    }
+
+    .page:last-child {
+        page-break-after: auto;
+    }
+
+    .page .section {
+        width: 100%;
+        color: #000000;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+
+    .page .section.title p {
+        margin: 0px;
+        text-indent: 0px;
+    }
+
+    .page .section.title .right {
+        padding-top: 0px;
+    }
+
+    .page .section .left {
+        float: left;
+        width: 183px;
+        color: #339933;
+        padding-right: 15px;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    .page .section .right {
+        float: right;
+        width: 493px;
+        padding-left: 5px;
+        padding-right: 100px;
+        padding-top: 36px;
+    }
+
+    .page .section .exp_header {
+        width: 183px;
+        color: #339933;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    .page .section .exp_entry {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .page .section .exp_entry .left {
+        float: left;
+        width: 183px;
+        color: #339933;
+        padding-right: 15px;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    .page .section .exp_entry .right {
+        float: right;
+        width: 493px;
+        padding-left: 5px;
+        padding-right: 100px;
+        padding-top: 0px;
+    }
+}
